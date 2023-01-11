@@ -1,15 +1,35 @@
 import styles from "./register.module.css";
 
-export default function(){
+export default function REG (){
     return(
-        <div>
-            <div>
-                <div>
-                    <input type="text" className="Firstname" placeholder="FIRSTNAME"/>
-                </div>
+        <div className={styles.container}>
+            <div className={styles.LEFT}>
+                <h1>Registration Form</h1>
+                <br></br>
             </div>
-            <div>
-                <img src="image-removebg-preview (1) 2.png"></img>
+
+            <div className={styles.RIGHT}>
+                <h6>Firstname</h6>
+                <input type="text"/>
+                <h6>Lastname</h6>
+                <input type="text"/>
+                <h6>Email</h6>
+                <input type="text"/>
+                <h6>Mobile</h6>
+                <input type="number"/>
+                <h6>Address</h6>
+                <input type="text"/>
+                <h6>Old TUP Student?</h6>
+                <input type="radio" id="yes" name="Agree" value="Yes"/>
+<label for="yes">Yes</label><br></br>
+                <input type="radio" id="no" name="Disagree" value="No"/>
+<label for="no">No</label>
+                <br></br>
+                <textarea rows="4" cols="50"> 
+                    Why do you want to study here?
+                </textarea>
+                <br></br>
+                <button id="btn">SIGN UP</button>
             </div>
         </div>
     )
