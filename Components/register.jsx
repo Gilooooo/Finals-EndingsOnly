@@ -20,9 +20,9 @@ export default function REG (){
                 <h6>Address</h6>
                 <input type="text"/>
                 <h6>Old TUP Student?</h6>
-                <input type="radio" id="yes" name="Agree" value="Yes"/>
+                <input type="radio" id="yes" name="Options" value="Yes"/>
 <label for="yes">Yes</label><br></br>
-                <input type="radio" id="no" name="Disagree" value="No"/>
+                <input type="radio" id="no" name="Options" value="No"/>
 <label for="no">No</label>
                 <br></br>
                 <textarea rows="4" cols="50"> 
