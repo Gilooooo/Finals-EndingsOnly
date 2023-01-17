@@ -25,8 +25,8 @@ export default function REG (){
                 <input type="radio" id="no" name="Options" value="No"/>
 <label for="no">No</label>
                 <br></br>
-                <textarea rows="4" cols="50"> 
-                    Why do you want to study here?
+                <textarea rows="4" cols="50" placeholder="Why do you want to study here?"> 
+                    
                 </textarea>
                 <br></br>
                 <button id="btn">SIGN UP</button>
