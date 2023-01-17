@@ -1,7 +1,7 @@
 .container1{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #781010;
     color: white;  
     height: 787px;
@@ -10,10 +10,28 @@
 .container2{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     background-color: #781010;
     color: white;  
     gap: 30px;
-    padding-left:100px ;
+}
+.reason{
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    height: 100px;
+    width: 300px;
+}
+.container2 button{
+    justify-content: center;
+    background-color: white;
+    font-size: 15px;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: black;
+    height: 40px;
+    width: 90px;
 }
 .form{
     background-color: #781010;
