@@ -4,8 +4,12 @@
     justify-content: space-around;
     background-color: #781010;
     color: white;  
-    height: 787px;
-    
+    height: 100%;
+    min-height: 787px;
+}
+.container2 p{
+    font-size: 15px;
+    text-align: center;
 }
 .container2{
     display: flex;
@@ -14,6 +18,9 @@
     background-color: #781010;
     color: white;  
     gap: 30px;
+}
+.container2 button{
+    margin: 0px 0px 0px 100px;
 }
 .reason{
     border: 3px solid black;
@@ -24,7 +31,6 @@
     width: 300px;
 }
 .container2 button{
-    justify-content: center;
     background-color: white;
     font-size: 15px;
     border: 3px solid black;
@@ -35,7 +41,7 @@
 }
 .form{
     background-color: #781010;
-    padding:70px;
+    padding:70px 70px 70px 100px;
 }
 .input{
     border: 3px solid black;
