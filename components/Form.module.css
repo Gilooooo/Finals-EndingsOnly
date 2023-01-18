@@ -67,14 +67,11 @@
     border: 3px solid black;
     border-radius:10px;
     height: 200px;
-    width: 620px;
+    width: 100%;
     background-color: white;
     color: black;
 }
-.reason{
-    display: flex;
-    flex: 1 1 50%;
-}
+
 .old{
     margin: 10px;
     padding-left: 65px;
