@@ -1,0 +1,94 @@
+.main{
+    background-color: #781010;
+    height: 100vh;
+}
+.main p{
+    text-align: center;
+    color: violet;
+}
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #781010;
+}
+.names input{
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 50px;
+    width: 300px;
+    background-color: white;
+    color: black;
+}
+.enumber input{
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 50px;
+    width: 300px;
+    background-color: white;
+    color: black;
+}
+.address input{
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 50px;
+    width: 300px;
+    background-color: white;
+    color: black;
+    
+}
+.names {
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.enumber{
+    display: flex; 
+    flex-wrap: wrap;  
+    gap:20px;
+}
+.oldaddress{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px;
+}
+.options input{
+    height:20px;
+    width: 20px;
+}
+.reason input{
+    border: 3px solid black;
+    border-radius:10px;
+    height: 200px;
+    width: 620px;
+    background-color: white;
+    color: black;
+}
+.reason{
+    display: flex;
+    flex: 1 1 50%;
+}
+.old{
+    margin: 10px;
+    padding-left: 65px;
+}
+.container1 button{
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    margin-top: 10px;
+    margin-left:260px ;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+}
+.register{
+    padding:70px 70px 70px 100px;
+}
