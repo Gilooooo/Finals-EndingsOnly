@@ -13,16 +13,16 @@ export default function FORM(){
     const [Address, setAddress] = useState("")
     const [old_stud, setold_stud] = useState("")
     const [Reason, setReason] = useState("")
-
+    const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
     const schema = yup.object().shape({
         firstName: yup.string().required("The First Name is Required!"),
         LastName: yup.string().required("The Last Name is Required!"),
         Email: yup.string().email().required(),
-        Mobile: yup.number().min("9000000000").required("The Mobile Number is required!"),
+        Mobile: yup.string().matches(phoneRegExp, 'Phone number is not valid'),
         Address: yup.string().required(),
         old_stud: yup.string().required(),
-        Reason: yup.string().required(),
+        Reason: yup.string().required("Are you old student or not?"),
     });
     
     const{register, handleSubmit, formState:{errors} } = useForm({
@@ -80,15 +80,18 @@ export default function FORM(){
 
                                 <div className={styles.option}>
                                     <h3>OLD TUP STUDENT?</h3><br />
+                                    <div className={styles.option1}>
                                         <label htmlfor="yes" >YES</label>
                                             <input type="radio" name="Option" value="yes" className={styles.radio} {...register("old_stud")}
                                             onChange={(e) =>{setold_stud(e.target.value)}}/>
                                         <label htmlfor="no" >NO</label>
                                             <input type="radio" name="Option" value="no" className={styles.radio} {...register("old_stud")}
                                             onChange={(e) =>{setold_stud(e.target.value)}} /><br />
-                                                <p>{errors.old_stud?.message}</p><br />
+                                                
+                                    </div>
+                                        <p>{errors.old_stud?.message}</p><br />
                                 </div>    
-                                        <input type="text"  placeholder="Why do you want to study here?" className={styles.reason} {...register("Reason")}
+                                        <input type="text" placeholder="Why do you want to study here?" className={styles.reason} {...register("Reason")}
                                         onChange={(e) =>{setReason(e.target.value)}}/><br />  
                                             <p>{errors.Reason?.message}</p><br />     
                                                 <button >SUBMIT</button>

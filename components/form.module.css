@@ -17,7 +17,7 @@
     justify-content: center;
     background-color: #781010;
     color: white;  
-    gap: 30px;
+    gap: 20px;
 }
 .container2 button{
     margin: 0px 0px 0px 100px;
@@ -27,8 +27,11 @@
     border-radius: 10px;
     background-color: white;
     color: black;
-    height: 100px;
+    height: 200px;
     width: 300px;
+
+    
+
 }
 .container2 button{
     background-color: white;
@@ -58,4 +61,10 @@
 .option{
     text-align: center;
     justify-content: center;
+}
+.option1{
+    display: flex;
+    justify-content: center;
+    margin:10px 0px 20px 70px;
+    gap: 20px;
 }
