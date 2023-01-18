@@ -85,11 +85,11 @@ export default function FORM(){
                                             onChange={(e) =>{setold_stud(e.target.value)}}/>
                                         <label htmlfor="no" >NO</label>
                                             <input type="radio" name="Option" value="no" className={styles.radio} {...register("old_stud")}
-                                            onchange={(e) =>{setold_stud(e.target.value)}} /><br />
+                                            onChange={(e) =>{setold_stud(e.target.value)}} /><br />
                                                 <p>{errors.old_stud?.message}</p><br />
                                 </div>    
                                         <input type="text"  placeholder="Why do you want to study here?" className={styles.reason} {...register("Reason")}
-                                        onchange={(e) =>{setReason(e.target.value)}}/><br />  
+                                        onChange={(e) =>{setReason(e.target.value)}}/><br />  
                                             <p>{errors.Reason?.message}</p><br />     
                                                 <button >SUBMIT</button>
                                         
