@@ -19,9 +19,9 @@ export default function FORM (){
         firstName: yup.string().required("The First Name is Required!"),
         LastName: yup.string().required("The Last Name is Required!"),
         Email: yup.string().email().required(),
-        Mobile: yup.string().matches(phoneRegExp, 'Phone number is not valid'),
+        Mobile: yup.string().length(11,"Phone number is not valid").matches(phoneRegExp, 'Phone number is not valid'),
         Address: yup.string().required(),
-        old_stud: yup.string().required("Are you old student or not?"),
+        old_stud: yup.mixed().oneOf(['Yes', 'No'], "Choose One"),
         Reason: yup.string().required(),
     });
     
