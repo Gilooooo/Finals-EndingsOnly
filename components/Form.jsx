@@ -13,7 +13,7 @@ export default function FORM (){
     const [Address, setAddress] = useState("")
     const [old_stud, setold_stud] = useState("")
     const [Reason, setReason] = useState("")
-    const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
+    const phoneRegExp = /^(09|\+639)\d{9}$/
 
     const schema = yup.object().shape({
         firstName: yup.string().required("The First Name is Required!"),
