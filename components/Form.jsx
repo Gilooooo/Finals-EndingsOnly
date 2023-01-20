@@ -4,6 +4,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import React, { useState } from "react";
 import Axios from "axios";
+import Swal from "sweetalert2";
 
 export default function FORM (){
     const [firstName, setfirstName] = useState("")
@@ -31,6 +32,17 @@ export default function FORM (){
 
     const submitForm = (data) => {
         console.log(data);
+        Swal.fire({
+            title: "REGISTRATION COMPLETE!",
+            text: 'Congratulations, You are now registered',
+            icon: 'success',
+            confirmButtonText: 'OK',
+            padding:"10px",
+            width: 350,
+            background: "#781010",
+            color: "white",
+            confirmButtonColor: "green",
+        });
         Axios.post("http://localhost:8080/api/insert", {
             firstName:firstName,
             LastName:LastName,
@@ -125,6 +137,7 @@ export default function FORM (){
                                     
                         </div>
                         <p>{errors.Reason?.message}</p><br /> 
+                        
                                     <button>SUBMIT</button>
                         <div>
                             
