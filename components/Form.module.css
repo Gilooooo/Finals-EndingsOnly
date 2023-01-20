@@ -11,6 +11,10 @@
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: #781010;
+    text-align: center;
+}
+.container1 h3{
+        text-align: left;
 }
 .names input{
     border: 3px solid black;
@@ -70,8 +74,8 @@
     width: 100%;
     background-color: white;
     color: black;
+    
 }
-
 .old{
     margin: 10px;
     padding-left: 65px;
@@ -80,8 +84,6 @@
     background-color: white;
     color: black;
     border: 3px solid black;
-    margin-top: 10px;
-    margin-left:260px ;
     border-radius: 10px;
     width: 100px;
     height: 50px;
