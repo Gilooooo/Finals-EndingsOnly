@@ -19,11 +19,11 @@ export default function FORM (){
     const schema = yup.object().shape({
         firstName: yup.string().required("The First Name is Required!"),
         LastName: yup.string().required("The Last Name is Required!"),
-        Email: yup.string().email().required(),
+        Email: yup.string().email().required("Email is Required!"),
         Mobile: yup.string().length(11,"Phone number is not valid").matches(phoneRegExp, 'Phone number is not valid'),
-        Address: yup.string().required(),
-        old_stud: yup.mixed().oneOf(['Yes', 'No'], "Choose One"),
-        Reason: yup.string().required(),
+        Address: yup.string().required("Address is Required!"),
+        old_stud: yup.mixed().oneOf(['Yes', 'No'], "Choose One!"),
+        Reason: yup.string().required("Required!"),
     });
     
     const{register, handleSubmit, formState:{errors} } = useForm({
@@ -43,7 +43,7 @@ export default function FORM (){
             color: "white",
             confirmButtonColor: "green",
         });
-        Axios.post("http://localhost:8080/api/insert", {
+        Axios.post("http://localhost:8080/insert", {
             firstName:firstName,
             LastName:LastName,
             Email:Email,
